@@ -1,0 +1,20 @@
+%%mocodo
+:
+Paiement: id_Paiement, montant, date_paiement, mode_paiement_stripe
+:::
+Avis: id_Avis, note_étoiles_ou_score_sur5, commentaire, date_avis, auteur_avis, #id_Utilisateur > Utilisateur > id_Utilisateur
+:::
+
+
+:::
+Réservation: id_Réservation, date_début, date_fin, statut, #id_Paiement > Paiement > id_Paiement, #id_Service > Service > id_Service, #id_Utilisateur > Utilisateur > id_Utilisateur, #id_Animal > Animal > id_Animal
+:::
+Utilisateur: id_Utilisateur, nom, prenom, Email, Mot_de_passe, telephone, Adresse
+:
+
+
+:
+Service: id_Service, type_Reservation, tarif
+:::
+Animal: id_Animal, nom, type, race, age, poids, reference, #id_Utilisateur > Utilisateur > id_Utilisateur
+:::

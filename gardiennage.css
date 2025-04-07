@@ -1,0 +1,365 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Variables */
+:root {
+    --primary-color: #093106;
+    --secondary-color: #ffffff;
+    --background-color: #fcfcfc;
+    --text-color: #333;
+    --menu-bg-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Structure globale */
+/* body {
+    background-image: url('https://media.istockphoto.com/id/489272417/fr/photo/chat-et-chien-assis-ensemble.jpg?b=1&s=612x612&w=0&k=20&c=OjjxTvDXyrVUzDXOBz1UF4PJG3PvUdGthJe9bGZq4Ys=');
+
+    background-repeat:no-repeat;
+    background-position:bottom;
+    color: var(--text-color);
+
+} */
+
+/* Header */
+.header {
+    background-color:green;
+    color: rgb(101, 72, 72);
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(6, 61, 32);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #e5e8e5;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+   
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-icons a {
+    color:white;
+    font-size: 30px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50;
+    height: 500px;
+    object-fit: cover;
+    z-index: -1;
+    justify-content: center;
+}
+
+.hero-content {
+    padding: 40px;
+    color: rgb(13, 110, 47);
+    max-width: 600px;
+    text-shadow: 1px 1px 3px rgba(7, 0, 7, 0.5);
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Service Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Menu Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menu latéral */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--menu-bg-color);
+    z-index: 1000;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+}
+
+.close-btn:hover {
+    color: var(--primary-color);
+}
+
+.side-menu-content {
+    padding: 50px 20px 20px;
+}
+
+.side-menu-content h3 {
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.side-menu-content ul {
+    list-style: none;
+}
+
+.side-menu-content ul li {
+    margin-bottom: 20px;
+}
+
+.side-menu-content ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s ease;
+    display: block;
+}
+
+.side-menu-content ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+h3{
+    color: rgb(16, 124, 232);
+}
+
+
+
+
+       
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Couleur de fond de secours */
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideBackground 30s linear infinite;
+    z-index: -1;
+    opacity: 0.3; /* Rend les images légèrement transparentes */
+}
+
+body::before {
+    background-image: url('https://images.pexels.com/photos/2070341/pexels-photo-2070341.jpeg?auto=compress&cs=tinysrgb&w=1200');
+    animation-delay: -10s;
+}
+
+body::after {
+    background-image: url('https://images.pexels.com/photos/16643788/pexels-photo-16643788/free-photo-of-animal-animal-de-compagnie-herbe-chat.jpeg?auto=compress&cs=tinysrgb&w=1200');
+    animation-delay: -20s;
+}
+
+@keyframes slideBackground {
+    0%, 33.33% {
+        transform: translateX(0);
+        opacity: 0.3;
+    }
+    36.66%, 66.66% {
+        transform: translateX(-100%);
+        opacity: 0.3;
+    }
+    70%, 100% {
+        transform: translateX(100%);
+        opacity: 0.3;
+    }
+}
+
+/* Ajouter une troisième image avec un élément supplémentaire */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.istockphoto.com/id/1497909628/fr/photo/chat-et-chien-assis-ensemble-dans-un-pr%C3%A9.jpg?b=1&s=612x612&w=0&k=20&c=jOCqiTdLJdNgzmjJfC7a918OQKSxmSWRMfglknwmQd0=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideBackground 30s linear infinite;
+    z-index: -2;
+    opacity: 0.3;
+    animation-delay: 0s;
+}
+
+/* Conteneur principal */
+.promo-banner {
+    width: 100%; /* Largeur totale */
+    overflow: hidden; /* Masque le texte qui dépasse */
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Texte défilant */
+.promo-banner {
+    display: inline-block; /* Empêche le passage à la ligne */
+    white-space: nowrap; /* Pas de retour à la ligne */
+    font-size: 1.5rem;
+    color: #cb0b0b;
+    animation: defilement 10s linear infinite; /* Animation continue */
+}
+
+/* Animation de défilement */
+@keyframes defilement {
+    from {
+        transform: translateX(100%); /* Départ hors de l'écran à droite */
+    }
+    to {
+        transform: translateX(-100%); /* Fin hors de l'écran à gauche */
+    }
+}
+
+

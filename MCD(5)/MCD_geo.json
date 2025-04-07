@@ -1,0 +1,47 @@
+{
+  "width": 624,
+  "height": 439,
+  "cx": [
+    [ "PAIEMENT", 84 ],
+    [ "EST_ASSOCIEE_A", 245 ],
+    [ "AVIS", 422 ],
+    [ "ECRIT", 566 ],
+    [ "CONCERNE", 84 ],
+    [ "RESERVATION", 245 ],
+    [ "EFFECTUE", 422 ],
+    [ "UTILISATEUR", 566 ],
+    [ "SERVICE", 84 ],
+    [ "CONFIER", 245 ],
+    [ "ANIMAL", 422 ],
+    [ "POSSEDE", 566 ]
+  ],
+  "cy": [
+    [ "PAIEMENT", 68 ],
+    [ "EST_ASSOCIEE_A", 68 ],
+    [ "AVIS", 68 ],
+    [ "ECRIT", 68 ],
+    [ "CONCERNE", 228 ],
+    [ "RESERVATION", 228 ],
+    [ "EFFECTUE", 228 ],
+    [ "UTILISATEUR", 228 ],
+    [ "SERVICE", 354 ],
+    [ "CONFIER", 354 ],
+    [ "ANIMAL", 354 ],
+    [ "POSSEDE", 354 ]
+  ],
+  "shift": [
+    [ "EST_ASSOCIEE_A,RESERVATION,0", 0 ],
+    [ "EST_ASSOCIEE_A,PAIEMENT,0", 0 ],
+    [ "ECRIT,UTILISATEUR,0", 0 ],
+    [ "ECRIT,AVIS,0", 0 ],
+    [ "CONCERNE,RESERVATION,0", 0 ],
+    [ "CONCERNE,SERVICE,0", 0 ],
+    [ "EFFECTUE,UTILISATEUR,0", 0 ],
+    [ "EFFECTUE,RESERVATION,0", 0 ],
+    [ "CONFIER,RESERVATION,0", 0 ],
+    [ "CONFIER,ANIMAL,0", 0 ],
+    [ "POSSEDE,UTILISATEUR,0", 0 ],
+    [ "POSSEDE,ANIMAL,0", 0 ]
+  ],
+  "ratio": []
+}

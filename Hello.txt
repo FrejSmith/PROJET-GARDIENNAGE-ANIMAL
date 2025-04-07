@@ -1,0 +1,25 @@
+VIGNERON, NICOLAS
+Statut : A quitté la session
+
+11:56
+
+divL.addEventListener('mouseover', evt => {
+
+  console.log(evt);
+
+});
+DURRIEU, BENJAMIN
+DURRIEU, BENJAMIN
+Statut : A quitté la session
+
+12:21
+
+developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+VIGNERON, NICOLAS
+VIGNERON, NICOLAS
+Statut : A quitté la session
+
+16:01
+
+developer.mozilla.org/en-US/docs/Web/API/Element/transitionend_event
+hello

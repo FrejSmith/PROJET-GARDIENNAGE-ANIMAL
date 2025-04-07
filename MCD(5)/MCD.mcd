@@ -1,0 +1,14 @@
+Paiement:id_Paiement,montant,date_paiement,mode_paiement_stripe
+Est_associée_à ,11 Réservation,11 Paiement
+Avis:id_Avis,note_étoiles_ou_score_sur5,commentaire,date_avis,auteur_avis
+Ecrit ,0N Utilisateur,11 Avis
+
+Concerne,11 Réservation, 0N Service
+Réservation:id_Réservation,date_début , date_fin,statut
+Effectue,0N Utilisateur,11 Réservation
+Utilisateur: id_Utilisateur,nom,prenom,Email,Mot_de_passe,telephone,Adresse
+
+Service:id_Service,type_Reservation,tarif
+Confier, 11 Réservation, 0N animal
+Animal: id_Animal,nom,type,race,age,poids,reference
+Possède, 1N Utilisateur ,11 Animal

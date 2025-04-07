@@ -1,0 +1,22 @@
+{
+  "width": 806,
+  "height": 391,
+  "cx": [
+    [ "PAIEMENT", 116 ],
+    [ "AVIS", 512 ],
+    [ "RESERVATION", 306 ],
+    [ "UTILISATEUR", 716 ],
+    [ "SERVICE", 116 ],
+    [ "ANIMAL", 512 ]
+  ],
+  "cy": [
+    [ "PAIEMENT", 77 ],
+    [ "AVIS", 77 ],
+    [ "RESERVATION", 187 ],
+    [ "UTILISATEUR", 187 ],
+    [ "SERVICE", 297 ],
+    [ "ANIMAL", 297 ]
+  ],
+  "shift": [],
+  "ratio": []
+}
